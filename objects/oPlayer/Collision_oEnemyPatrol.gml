@@ -1,4 +1,4 @@
-/// @description enemy follow collision
+/// @description enemy patrol collision
 // You can write your code in this editor
 
 //check to see if there is a collision between player and the top of Oenemy
