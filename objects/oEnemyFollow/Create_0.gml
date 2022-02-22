@@ -15,3 +15,10 @@ turnTimer = 2.5;
 xDirection = 0;
 xSpeed = 2;
 
+//stun variables
+stun = false;
+stunTimer = 2;
+
+grv = 0.4;
+yVector= 0;
+

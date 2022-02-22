@@ -24,3 +24,11 @@ isInvincible = false;
 
 //health points
 hp = 6;
+
+//level timer
+levelTimer = 100;
+
+//invincibility timer
+invTimer = 2;
+
+omniDirection = 0;

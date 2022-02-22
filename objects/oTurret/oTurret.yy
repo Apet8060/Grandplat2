@@ -3,7 +3,7 @@
     "name": "sTurret",
     "path": "sprites/sTurret/sTurret.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
