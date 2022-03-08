@@ -17,7 +17,6 @@ jumpForce = -13;
 
 //coins and points
 
-global.coins = 0;
 
 //invincibility
 isInvincible = false;
@@ -32,3 +31,8 @@ levelTimer = 100;
 invTimer = 2;
 
 omniDirection = 0;
+dashing = false;
+dashTimer = 0.3;
+
+enterShip = false;
+eneteredShip = false;

@@ -1,4 +1,4 @@
-/// @description movement
+  /// @description movement
 //code that runs every frame
 
 if isInvincible
@@ -11,35 +11,53 @@ if isInvincible
 	}
 }
 
-levelTimer -= 1/room_speed;
 
-if (levelTimer <= 0)
-{
-	room_restart();
-}
 
 //keyboard check and inputs
-right = keyboard_check(vk_right);
-left = keyboard_check(vk_left);
-jump = keyboard_check_pressed(vk_space);
-dash = keyboard_check_pressed(vk_control);
 
-if left
-{
-	omniDirection = -1;
-}
-
-if right
-{
-	omniDirection = +1;
-}
 
 
 //Horitontal movement
-xDirection = right - left;
-xVector = xSpeed * xDirection;
+
 
 if dash
+{
+	dashing = true;
+}
+
+if dashing
+{
+	dashTimer -= 1/room_speed;
+	if dashTimer <= 0
+	{
+		dashing = false;
+		dashTimer = 0.3; 
+	}
+	if (!place_empty(x + xVector, y))
+	{
+	xVector = 0;
+	}
+	//otherwise move fast
+	if omniDirection = -1
+	{
+		x = x - 10;
+	}
+	if omniDirection = 1
+	{
+		x = x + 10;
+	}
+	
+	if (!place_empty(x, y + yVector))
+		{
+		
+			while(place_empty(x, y + sign(yVector),))
+				{
+				//only move 1 pixel at a time until you hit a Owall
+				y = y + sign(yVector);
+				}
+				yVector = 0;
+		}
+}
 
 
 else
@@ -79,10 +97,7 @@ else
 
 	if (place_meeting(x, y + yVector, oWall))
 		{
-			//check one pixel to up or down until we collide with oWall
-			// ! means "not
-			//"sign" is going to return + or - sign for a value (-1, +1)
-			//sign(yVector) if yVector is positive it will return a +1, if negative, it will return a -1
+		
 			while(!place_meeting(x, y + sign(yVector), oWall))
 				{
 				//only move 1 pixel at a time until you hit a Owall
