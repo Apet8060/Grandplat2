@@ -8,6 +8,7 @@
     {"id":{"name":"sTurret","path":"sprites/sTurret/sTurret.yy",},"order":4,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":1,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":4,},
+    {"id":{"name":"sPlayerWalking","path":"sprites/sPlayerWalking/sPlayerWalking.yy",},"order":8,},
     {"id":{"name":"oEnemyPatrol","path":"objects/oEnemyPatrol/oEnemyPatrol.yy",},"order":9,},
     {"id":{"name":"EnemyHurt","path":"scripts/EnemyHurt/EnemyHurt.yy",},"order":1,},
     {"id":{"name":"oEnemyFollow","path":"objects/oEnemyFollow/oEnemyFollow.yy",},"order":7,},

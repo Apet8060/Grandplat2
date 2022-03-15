@@ -36,3 +36,11 @@ dashTimer = 0.3;
 
 enterShip = false;
 eneteredShip = false;
+
+enum states
+{
+	walking,
+	jumping
+}
+
+state = states.walking;

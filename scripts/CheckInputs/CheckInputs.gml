@@ -16,4 +16,8 @@ function CheckInputs()
 	{
 		omniDirection = +1;
 	}
+	if dash
+	{
+		dashing = true;
+	}
 }
