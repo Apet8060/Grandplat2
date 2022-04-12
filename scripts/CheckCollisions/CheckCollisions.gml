@@ -4,8 +4,12 @@ function CheckCollisionsX()
 {
 	CheckInputs();
 	xDirection = right - left;
-	xVector = xSpeed * xDirection;
+	if (xDirection !=0)
+	{
+		image_xscale = xDirection;
+	}
 	
+	xVector = xSpeed * xDirection;
 	if dashing
 	{
 		dashTimer -= 1/room_speed;
@@ -19,11 +23,11 @@ function CheckCollisionsX()
 		xVector = 0;
 		}
 		//otherwise move fast
-		if omniDirection = -1
+		else if omniDirection = -1
 		{
 			x = x - 10;
 		}
-		if omniDirection = 1
+		else if omniDirection = 1
 		{
 			x = x + 10;
 		}

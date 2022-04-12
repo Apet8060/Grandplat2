@@ -40,7 +40,16 @@ eneteredShip = false;
 enum states
 {
 	walking,
-	jumping
+	jumping,
+	idle
 }
 
-state = states.walking;
+state = states.idle;
+
+state_array[states.walking] = StatePlayerWalking;
+state_array[states.jumping] = StatePlayerJumping;
+state_array[states.idle] = StatePlayerIdle;
+
+sprite_array[states.walking] = sPlayerWalking
+sprite_array[states.jumping] = sPlayerJumping
+sprite_array[states.idle] = sPlayerIdle

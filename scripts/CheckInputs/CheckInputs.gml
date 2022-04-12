@@ -6,7 +6,7 @@ function CheckInputs()
 	left = keyboard_check(vk_left);
 	jump = keyboard_check_pressed(vk_space);
 	dash = keyboard_check_pressed(vk_control);
-
+	xDirection = right - left;
 	if left
 	{
 		omniDirection = -1;

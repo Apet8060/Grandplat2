@@ -2,4 +2,4 @@
 // You can write your code in this editor
 
 room_goto_next();
-oHUD.levelTimer = 100;
+oHud.levelTimer = 100;

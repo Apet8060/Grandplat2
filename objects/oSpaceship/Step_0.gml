@@ -25,7 +25,7 @@ if (place_meeting(x + xVector, y, oWall))
 			
 x = x + xVector;
 			
-		if (place_meeting(x, y + yVector, oWall))
+if (place_meeting(x, y + yVector, oWall))
 	{
 		
 		while(!place_meeting(x, y + sign(yVector), oWall))
