@@ -3,6 +3,14 @@
 function StatePlayerJumping()
 {
 	//what does the state do
+	CheckCollisionsX()
+	
+	if (canJump)
+	{
+		yVector = jumpForce;
+		canJump = false;
+	}
+
 		if (place_meeting(x, y + 1, oWall) and (jump))
 	{
 			yVector = jumpForce;
@@ -13,12 +21,18 @@ function StatePlayerJumping()
 			yVector = jumpForce;
 	}
 	
+	CheckCollisionsY();
 	
-	//animations for the state
 	
 	//conditions for leaving the state
 	if(place_meeting(x, y + 1, oWall))
 	{
 		state = states.walking;
+		canJump = true;
+	}
+	if(place_meeting(x, y + 1, oTurret))
+	{
+		state = states.walking;
+		canJump = true;
 	}
 }

@@ -21,4 +21,9 @@ function StatePlayerWalking()
 	{
 			state = states.jumping;
 	}
+	
+	if (xDirection = 0)
+	{
+		state = states.idle
+	}
 }

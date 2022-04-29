@@ -1,4 +1,8 @@
 /// @description creating variables
+
+//code that runs when oplayer is created
+canJump = true;
+
 //how many players we want the player to move
 xSpeed = 4;
 
@@ -17,6 +21,7 @@ jumpForce = -13;
 
 //coins and points
 
+global.key = 0;
 
 //invincibility
 isInvincible = false;
@@ -36,6 +41,7 @@ dashTimer = 0.3;
 
 enterShip = false;
 eneteredShip = false;
+
 
 enum states
 {
