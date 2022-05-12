@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},"order":2,},
     {"id":{"name":"StatePlayerWalking","path":"scripts/StatePlayerWalking/StatePlayerWalking.yy",},"order":4,},
+    {"id":{"name":"oHeart","path":"objects/oHeart/oHeart.yy",},"order":13,},
     {"id":{"name":"StatePlayerJumping","path":"scripts/StatePlayerJumping/StatePlayerJumping.yy",},"order":5,},
     {"id":{"name":"PlayerHurt","path":"scripts/PlayerHurt/PlayerHurt.yy",},"order":0,},
     {"id":{"name":"Level2","path":"rooms/Level2/Level2.yy",},"order":1,},
@@ -18,8 +19,8 @@
     {"id":{"name":"sSpaceship","path":"sprites/sSpaceship/sSpaceship.yy",},"order":7,},
     {"id":{"name":"sKey","path":"sprites/sKey/sKey.yy",},"order":11,},
     {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},"order":2,},
-    {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},"order":12,},
     {"id":{"name":"oTurret","path":"objects/oTurret/oTurret.yy",},"order":5,},
+    {"id":{"name":"sHeart","path":"sprites/sHeart/sHeart.yy",},"order":12,},
     {"id":{"name":"oSpaceshipSprite","path":"objects/oSpaceshipSprite/oSpaceshipSprite.yy",},"order":10,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":0,},
     {"id":{"name":"CheckCollisions","path":"scripts/CheckCollisions/CheckCollisions.yy",},"order":2,},
