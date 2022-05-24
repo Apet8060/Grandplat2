@@ -19,7 +19,8 @@ function PlayerHurt()
 //restart level for player death
 function Playerdeath()
 {
-	room_restart();
+	oHud.objectsDestroyed = [];
+	room_goto(Lose)
 	oHud.levelTimer = 100;
 	
 }

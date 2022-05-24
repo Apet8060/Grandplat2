@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-room_goto_next();
+if room_goto_next()
+{
+global.createdObjectID=0;	
+}
 oHud.levelTimer = 100;
+

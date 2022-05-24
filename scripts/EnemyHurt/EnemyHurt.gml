@@ -19,6 +19,7 @@ function EnemyHurt()
 //restart level for player death
 function EnemyDeath()
 {
+	array_push(oHud,objectsDestroyed, other.objectID)
 	instance_destroy(other);
 	if (random_range(0,10) > 3)
 		{

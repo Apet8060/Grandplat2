@@ -26,6 +26,7 @@ global.key = 0;
 //invincibility
 isInvincible = false;
 
+shotTimer = 3;
 //health points
 hp = 6;
 
